@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="magic">I will disappear and appear</p>
+    <button onclick="display()">button 1</button>
+    <script>
+        function display(){
+            let p1=document.getElementById("magic");
+            if(p1.style.display=="none"){
+                p1.style.display= "block";
+            }
+            else{
+                p1.style.display="none"
+            }
+        }
+    </script>
+</body>
+</html>

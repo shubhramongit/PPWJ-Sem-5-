@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="unique" onclick="magic()">Click here for magic!</p>
+    <script>
+        function magic(){
+            let p1=document.getElementById("unique");
+            p1.setAttribute("style","color: blue");
+        }
+        document.getElementById("unique").onclick=function() {
+            magic();
+        }
+    </script>
+</body>
+</html>

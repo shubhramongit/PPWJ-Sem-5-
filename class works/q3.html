@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .highlight{
+            color:aqua;
+            background-color: green;
+
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            document.getElementById("new").addEventListener("click",change())
+        }
+        function change(){
+            this.style.backgroundColor='rgb(24,34,355)';
+        }
+    </script>
+    <div id="new" style="width: 100px;background-color: cyan;"></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chp11 event listener</title>
+</head>
+<body>
+    <div class="color-box">Red</div>
+    <div class="color-box">Blue</div>
+        <!-- <p id="unique" onclick="magic()">Click here for magic!</p> -->
+         <script>
+            let colorDivs=document.querySelectorAll('.color-box');
+            colorDivs.forEach(div => {
+                div.addEventListener('click', function() {
+                    let colorName=this.textContent;
+                    document.body.style.backgroundColor=colorName;
+                    console.log('Background color changed to: ${colorName}');
+                });
+            });
+         </script>
+</body>
+</html>
