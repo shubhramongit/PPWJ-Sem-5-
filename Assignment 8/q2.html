@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <div id="container"></div>
+        <script>
+
+        // Requirement: Perform tasks when window.onload() is called
+
+        window.onload = function() {
+
+            // Select the container
+
+            const container = document.getElementById("container");
+
+            // 1. Create <h2>
+
+            const heading = document.createElement("h2");
+
+            heading.textContent = "Dynamic Elements Demo";
+
+            container.appendChild(heading);
+
+            // 2. Create <p>
+
+            const paragraph = document.createElement("p");
+
+            paragraph.textContent = "This paragraph was created dynamically.";
+
+            container.appendChild(paragraph);
+
+            // 3. Create <img> with source and width
+
+            const image = document.createElement("img");
+
+            image.src = "https://via.placeholder.com/150"; 
+
+            image.width = 150; 
+
+            image.alt = "Placeholder";
+
+            container.appendChild(image);
+
+            // 4. Create <a> link
+
+            const link = document.createElement("a");
+
+            link.href = "https://www.google.com"; 
+
+            link.textContent = " Click here to visit Google"; 
+
+            container.appendChild(link);
+
+        };
+    </script>
+</body>
+</html>
